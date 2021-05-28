@@ -1,0 +1,352 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:companyApp="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        app:theme="@style/MyActionBarTheme"
+        app:title=" Ordenes de trabajo"
+        app:titleTextColor="@color/color_general"
+        companyApp:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:src="@drawable/filtro"
+            android:textColor="#FFF" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/toolbarbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:drawableTint="@android:color/white"
+            android:scaleType="center"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@color/white"
+            android:visibility="gone"
+            app:backgroundTint="@color/color_general" />
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:background="@color/white"
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></FrameLayout>
+
+
+        <com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/shitstuff"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="-24dp"
+            app:headerLayout="@layout/nav_header_main"
+            app:itemTextColor="@color/black">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical"
+                android:background="@color/color_general">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <View android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/white"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/grupoOrdenesTrabajo"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ripple_menu_drawer"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:paddingRight="5dp"
+                            android:weightSum="5"
+                            android:visibility="visible">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_document"
+                                        />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="15dp"
+                                        android:text="Órdenes de trabajo"
+                                        android:textColor="@color/colorTextClear"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="0dp">
+
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:padding="0dp"
+                                    android:src="@drawable/ic_down_arrow"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/grupoConfiguracion"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/ripple_menu_drawer"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:paddingRight="5dp"
+                            android:weightSum="5"
+                            android:visibility="visible">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_menu_configuration"
+                                        />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="15dp"
+                                        android:text="Configuración"
+                                        android:textColor="@color/colorTextClear"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="0dp">
+
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:padding="0dp"
+                                    android:src="@drawable/ic_down_arrow"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/grupoCerrarSesion"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/ripple_menu_drawer"
+                            android:clickable="true"
+                            android:orientation="horizontal"
+                            android:paddingRight="5dp"
+                            android:weightSum="5"
+                            android:visibility="visible">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_logout"
+                                 />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="0dp"
+                                        android:paddingLeft="15dp"
+                                        android:text="@string/menuCloseSession"
+                                        android:textColor="@color/colorTextClear"
+                                        android:textSize="16sp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="0dp"
+                                android:paddingBottom="0dp">
+
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:padding="0dp"
+                                    android:src="@drawable/ic_down_arrow"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

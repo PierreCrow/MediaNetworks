@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/firstOne"
+        android:orderInCategory="1"
+        android:title="First One"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/menuSortNewest"
+                android:title="1-1" />
+            <item
+                android:id="@+id/menuSortRating"
+                android:title="1-2" />
+        </menu>
+    </item>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/groupdd_DdDseddttss">
+
+
+        <item
+            android:id="@+id/item_Home"
+
+            android:title="Inicio"
+            />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/groupdd_DDseddttss">
+
+
+        <item
+            android:id="@+id/scanner"
+            android:title="Scanner"
+            android:visible="false"
+            />
+
+    </group>
+
+    <item
+        android:title="Comprobantes"
+        android:id="@+id/grupoItems_Comprobantes"
+        >
+
+        <menu>
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/group_feature">
+
+                <item
+                    android:id="@+id/item_cotizacion"
+
+                    android:title="Cotizaciones"
+                    />
+                <item
+                    android:id="@+id/item_Boletas"
+
+                    android:title="Boletas"
+                    android:visible="true"
+                    />
+
+                <item
+                    android:id="@+id/item_Facturas"
+
+                    android:title="Facturas"
+                    />
+
+                <item
+                    android:id="@+id/nav_item_recedptor"
+                    android:icon="@android:drawable/ic_input_get"
+                    android:title="N/Credito"
+                    android:visible="false"
+                    />
+
+                <item
+                    android:id="@+id/nav_item_recdeptor"
+                    android:icon="@android:drawable/ic_input_get"
+                    android:title="N/Debito"
+                    android:visible="false"
+                    />
+
+                <item
+                    android:id="@+id/item_notaventa"
+
+                    android:title="Notas de Venta"
+                    />
+
+
+
+
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+
+
+    <item
+        android:title="Gastos"
+        android:id="@+id/grupoItems_Items"
+        >
+
+        <menu>
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/group_sfeature">
+
+                <item
+                    android:id="@+id/item_Gastos"
+
+                    android:title="Gastos"
+                    />
+
+                <item
+                    android:id="@+id/item_tiposGastos"
+
+                    android:title="Tipos Gastos"
+                    />
+
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+    <item
+        android:title="Inventario"
+        android:id="@+id/grupoItemss_Items"
+        >
+
+        <menu>
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/group_ssfeature">
+
+
+                <item
+                    android:id="@+id/nav_item_Almacenes"
+
+                    android:title="Almacenes"
+
+                    />
+
+                <item
+                    android:id="@+id/nav_item_Categorias"
+
+                    android:title="Categorías"
+
+                    />
+
+                <item
+                    android:id="@+id/item_Productos"
+
+                    android:title="Productos"
+                    android:visible="true"
+                    />
+
+                <item
+                    android:id="@+id/assetmovemtns"
+
+                    android:title="Movimientos"
+                    android:visible="true"
+                    />
+
+
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+    <item
+        android:title="Contactos"
+        android:id="@+id/grupoItemdss_Items"
+        >
+
+        <menu>
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/groupd_ssfeature">
+
+
+                <item
+                    android:id="@+id/item_Clientes"
+
+                    android:title="Clientes"
+                    android:visible="true"
+                    />
+
+                <item
+                    android:id="@+id/nav_item_Proveedores"
+
+                    android:title="Proveedores"
+
+                    />
+
+
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_seddttss">
+
+
+        <item
+            android:id="@+id/item_Reportes"
+
+            android:title="Reportes"
+            android:visible="false"
+            />
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_settss">
+
+
+        <item
+            android:id="@+id/item_Configuracion"
+
+            android:title="Configuración"
+            android:visible="false"
+            />
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_setts">
+
+
+        <item
+            android:id="@+id/item_CerrarSesion"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Cerrar Sesión" />
+
+
+    </group>
+
+
+
+
+
+</menu>

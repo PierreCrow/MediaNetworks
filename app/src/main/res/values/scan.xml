@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="dimen10">10dp</dimen>
+    <dimen name="dimen18">18sp</dimen>
+    <dimen name="dimen20">20dp</dimen>
+    <dimen name="dimen26">26dp</dimen>
+    <dimen name="dimen40">40dp</dimen>
+    <dimen name="dimen50">50dp</dimen>
+    <dimen name="size18">18sp</dimen>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="error_codeqr">error al escanear el código</string>
+    <string name="import_from_camera">Importar desde cámara</string>
+    <string name="import_from_error">Error al intentar importar imáganes</string>
+    <string name="import_from_gallery">Importar desde galería</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="no_camera_permission">no tiene el permiso de la cámara</string>
+    <string name="ok">Ok</string>
+    <string name="scan">Escanear</string>
+    <string name="show_button_settings">CONFIGURACIÓN</string>
+    <string name="show_message_settings">No cuenta con el permiso de cámara</string>
+    <string name="show_title_settings">Información</string>
+    <string name="text_checkin">Escanear código QR o Código de Barras</string>
+
+
+
+</resources>

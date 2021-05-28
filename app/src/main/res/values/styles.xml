@@ -1,0 +1,155 @@
+<resources>
+    <style name="TabLayoutTextStyleConocenos">
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:textColor">@color/color_general</item>
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/color_general</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/color_general</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="popupTheme">@style/PopupTheme</item>
+    </style>
+    <style name="PopupTheme" parent="Theme.AppCompat.Light">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <!--https://github.com/danielme-com/-Android-popup-menu- -Support-library/blob/master/res/values/styles.xml-->
+    </style>
+
+    <!-- displays the overflow menu below the toolbar-->
+    <style name="OverflowMenu" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="TextLogin">
+        <item name="android:textColor">@color/accountTextValue</item>
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:layout_marginBottom">6dp</item>
+
+    </style>
+
+    <!--Botton Login-->
+    <style name="Buttons_login">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">40dp</item>
+
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+    </style>
+
+
+        <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar" >
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.2</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">50dp</item>
+        </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/orange</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+    <style name="Hint_edittext">
+        <item name="android:textColor">@color/label_lead</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_up</item>
+    </style>
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+    <style name="DialogAnimationLeftRigth">
+        <item name="android:windowEnterAnimation">@anim/slide_rigth_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_rigth</item>
+    </style>
+
+    <style name="DialogAnimationUpDownUp">
+        <item name="android:windowEnterAnimation">@anim/slide_uptodown_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_up</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="TextLabelInfo">
+        <item name="android:textColor">@color/label_black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="TextLabelTitle">
+        <item name="android:textColor">@color/label_lead</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="TextSmallLabel">
+        <item name="android:textColor">@color/label_lead</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+
+    <style name="Buttons_cancel_standart">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_height">40dp</item>
+
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="Buttons_alert_dialog">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:layout_height">40dp</item>
+
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="TransparentProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854616675965",
+    "firebase_url": "https://facturaltoke-120c1.firebaseio.com",
+    "project_id": "facturaltoke-120c1",
+    "storage_bucket": "facturaltoke-120c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854616675965:android:7e84ae8bfafcd422",
+        "android_client_info": {
+          "package_name": "com.futuremobile.facturaltoke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854616675965-2osfp7urlvj69knj62ujtnslu2e4eepf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkkkkg3GW3YOl_TpxXqvmILBkaW1W3p_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854616675965-2osfp7urlvj69knj62ujtnslu2e4eepf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

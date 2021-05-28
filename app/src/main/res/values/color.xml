@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#000000</color>
+    <color name="orange">#c9ab6e</color>
+
+
+    <color name="accountTextValue">#000000</color>
+
+    <!--colors labels-->
+    <color name="label_gray">#999</color>
+    <color name="label_lead">#666</color>
+    <color name="label_black">#424141</color>
+    <color name="label_disabled">#0a000000</color>
+    <color name="white">#ffffff</color>
+    <color name="labelColor">#ffffff</color>
+
+
+
+
+    <color name="success">#5CB85C</color>
+    <color name="warning">#F99900</color>
+    <color name="error">#FF2C21</color>
+
+    <color name="colorPrimary">#2A4377</color>
+    <color name="colorPrimaryDark">#0091ea</color>
+    <color name="colorPrimaryLigth">#556FA5</color>
+    <color name="colorSecondary">#2196F3</color>
+    <color name="colorSecondaryDark">#0091ea</color>
+    <color name="colorThirth">#1dc9b7</color>
+    <color name="colorTextLigth">#6D6A6A</color>
+    <color name="colorTextDark">#252525</color>
+    <color name="colorTextClear">#CAC9C9</color>
+
+
+
+
+
+
+
+
+
+</resources>

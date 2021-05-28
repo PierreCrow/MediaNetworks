@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.futuremobile.wox">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_wox"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.futuremobile.wox.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+
+        <service
+            android:name="com.futuremobile.wox.presentation.ui.services.RefreshTokenService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.futuremobile.wox.presentation.utiles.TimerCuentaPrueba"
+            android:enabled="true" />
+
+        <service
+            android:name="com.futuremobile.wox.presentation.ui.services.SyncDataService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.futuremobile.wox.presentation.utiles.ServiceObtieneInfoServidor"
+            android:enabled="true" />
+
+        <service
+            android:name="com.futuremobile.wox.presentation.ui.services.NetworkValidationIntentService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDqXewuPJKfBZabt80iDfpyJ3dB4z65FLw" />
+        <meta-data
+            android:name="com.futuremobile.wox.presentation.utiles.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="AIzaSyAUhCzYRFeC3KYaxfwbua3XaMYL6ww7Sl4"
+            />
+
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.utiles.scanqr.BarcodeCaptureActivity"
+            android:parentActivityName="com.futuremobile.wox.presentation.ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.futuremobile.wox.presentation.utiles.BTDeviceList"
+            android:parentActivityName="com.futuremobile.wox.presentation.ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.SplashActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Activity"
+            android:parentActivityName="com.futuremobile.wox.presentation.ui.activities.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Actions_Activity"
+            android:parentActivityName="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Activity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Rollback_Activity"
+            android:parentActivityName="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Ampliacion_Activity"
+            android:parentActivityName="com.futuremobile.wox.presentation.ui.activities.mt_WorkOrder_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futuremobile.wox.presentation.ui.activities.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

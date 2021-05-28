@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="itemorder">#fff6e3</color>
+    <color name="colorchefrecoomendado">#efe3d8</color>
+    <color name="bordeplato">#b0775d</color>
+    <color name="greencall">#207b1f</color>
+    <color name="marronn">#532814</color>
+    <color name="verdeee">#39692b</color>
+    <color name="rojoooo">#cc0000</color>
+    <color name="averr">#a9a5a5</color>
+    <color name="aaaaaa">#dddddd</color>
+    <color name="yellow">#965F0B</color>
+
+
+    <color name="color_general">#003245</color>
+    <color name="color_general_ligth">#3996de</color>
+    <color name="color_general_second">#2196F3</color>
+    <color name="color_general_intermedio">#2c71b9</color>
+
+
+    <color name="color_general_verde">#1dc9b7</color>
+    <color name="color_general_fondo">#EBEBEB</color>
+
+
+
+
+    <color name="color_spinner">#e1e1ef</color>
+    <color name="color_primary_dark">#16223B</color>
+</resources>
